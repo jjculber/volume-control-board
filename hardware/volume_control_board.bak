@@ -31,7 +31,7 @@ U 1 1 5C4E5A09
 P 7350 5600
 F 0 "SW1" H 7350 5860 50  0000 C CNN
 F 1 "Rotary_Encoder_Switch" H 7350 5340 50  0000 C CNN
-F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 7250 5760 50  0001 C CNN
+F 2 "" H 7250 5760 50  0001 C CNN
 F 3 "" H 7350 5860 50  0001 C CNN
 	1    7350 5600
 	1    0    0    -1  
@@ -983,7 +983,7 @@ U 1 1 5C9F55E2
 P 2450 5750
 F 0 "JP1" H 2600 5800 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 5864 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2450 5750 50  0001 C CNN
+F 2 "" H 2450 5750 50  0001 C CNN
 F 3 "~" H 2450 5750 50  0001 C CNN
 	1    2450 5750
 	1    0    0    -1  
@@ -994,7 +994,7 @@ U 1 1 5C9F5933
 P 2450 5900
 F 0 "JP2" H 2600 5950 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 6014 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2450 5900 50  0001 C CNN
+F 2 "" H 2450 5900 50  0001 C CNN
 F 3 "~" H 2450 5900 50  0001 C CNN
 	1    2450 5900
 	1    0    0    -1  
@@ -1005,7 +1005,7 @@ U 1 1 5C9F9C5A
 P 2450 6050
 F 0 "JP3" H 2600 6100 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 6164 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2450 6050 50  0001 C CNN
+F 2 "" H 2450 6050 50  0001 C CNN
 F 3 "~" H 2450 6050 50  0001 C CNN
 	1    2450 6050
 	1    0    0    -1  
@@ -1016,7 +1016,7 @@ U 1 1 5C9FDF82
 P 2450 6200
 F 0 "JP4" H 2600 6250 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 6314 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2450 6200 50  0001 C CNN
+F 2 "" H 2450 6200 50  0001 C CNN
 F 3 "~" H 2450 6200 50  0001 C CNN
 	1    2450 6200
 	1    0    0    -1  
@@ -1027,7 +1027,7 @@ U 1 1 5CA022D1
 P 2450 6400
 F 0 "JP5" H 2600 6450 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 6514 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2450 6400 50  0001 C CNN
+F 2 "" H 2450 6400 50  0001 C CNN
 F 3 "~" H 2450 6400 50  0001 C CNN
 	1    2450 6400
 	1    0    0    -1  
@@ -1038,7 +1038,7 @@ U 1 1 5CA065FB
 P 2450 6550
 F 0 "JP6" H 2600 6600 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 6664 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2450 6550 50  0001 C CNN
+F 2 "" H 2450 6550 50  0001 C CNN
 F 3 "~" H 2450 6550 50  0001 C CNN
 	1    2450 6550
 	1    0    0    -1  
@@ -1049,7 +1049,7 @@ U 1 1 5CA0A92A
 P 2450 6700
 F 0 "JP7" H 2600 6750 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 6814 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2450 6700 50  0001 C CNN
+F 2 "" H 2450 6700 50  0001 C CNN
 F 3 "~" H 2450 6700 50  0001 C CNN
 	1    2450 6700
 	1    0    0    -1  
@@ -1060,7 +1060,7 @@ U 1 1 5CA0EC56
 P 2450 6850
 F 0 "JP8" H 2600 6900 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 6964 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2450 6850 50  0001 C CNN
+F 2 "" H 2450 6850 50  0001 C CNN
 F 3 "~" H 2450 6850 50  0001 C CNN
 	1    2450 6850
 	1    0    0    -1  
@@ -1071,7 +1071,7 @@ U 1 1 5CA12F83
 P 2450 7050
 F 0 "JP9" H 2600 7100 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 7164 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2450 7050 50  0001 C CNN
+F 2 "" H 2450 7050 50  0001 C CNN
 F 3 "~" H 2450 7050 50  0001 C CNN
 	1    2450 7050
 	1    0    0    -1  
@@ -1082,7 +1082,7 @@ U 1 1 5CA172B1
 P 2450 7200
 F 0 "JP10" H 2600 7250 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 7314 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2450 7200 50  0001 C CNN
+F 2 "" H 2450 7200 50  0001 C CNN
 F 3 "~" H 2450 7200 50  0001 C CNN
 	1    2450 7200
 	1    0    0    -1  
@@ -1093,7 +1093,7 @@ U 1 1 5CA1B5E0
 P 2450 7350
 F 0 "JP11" H 2600 7400 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 7464 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2450 7350 50  0001 C CNN
+F 2 "" H 2450 7350 50  0001 C CNN
 F 3 "~" H 2450 7350 50  0001 C CNN
 	1    2450 7350
 	1    0    0    -1  
@@ -1104,7 +1104,7 @@ U 1 1 5CA1F910
 P 2450 7500
 F 0 "JP12" H 2600 7550 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 2450 7614 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2450 7500 50  0001 C CNN
+F 2 "" H 2450 7500 50  0001 C CNN
 F 3 "~" H 2450 7500 50  0001 C CNN
 	1    2450 7500
 	1    0    0    -1  

@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name volume_control_board-rescue)(type Legacy)(uri ${KIPRJMOD}/volume_control_board-rescue.lib)(options "")(descr ""))
+  (lib (name ad5254)(type Legacy)(uri ${KIPRJMOD}/ad5254.lib)(options "")(descr ""))
+  (lib (name teensy)(type Legacy)(uri /home/justin/Downloads/teensy_library-master/teensy.lib)(options "")(descr ""))
+)
