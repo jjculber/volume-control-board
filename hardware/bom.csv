@@ -1,0 +1,15 @@
+Id,Designator,Package,Quantity,Designation,Supplier and ref,Note
+1,J2,Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal,1,AudioJack3,CP-3523SJCT-ND,
+2,"REF**,REF**,REF**,REF**",MountingHole_2.2mm_M2,4,MountingHole_2.2mm_M2,,
+3,"C1,C2,C3,C4,C5",C_0805,5,0.1uF,,
+4,J1,Socket_Strip_Straight_1x08_Pitch2.54mm,1,Screw_Terminal_01x08,A98333-ND (x4),
+5,"J4,J5",Socket_Strip_Straight_1x04_Pitch2.54mm,2,Conn_01x04,A98333-ND (x2),
+6,J6,Socket_Strip_Straight_1x02_Pitch2.54mm,1,RXTX/CAN,A98333-ND,
+7,"JP1,JP2,JP3,JP4,JP5,JP6,JP7,JP8,JP9,JP10,JP11,JP12",SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,12,SolderJumper_2_Open,,
+8,"R1,R2",R_0805,2,2.2k,,
+9,"R3,R4,R5,R6,R7,R8,R9",R_0805,7,10k,,
+10,"R10,R11,R12,R13",R_0805,4,R,,
+11,SW1,RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm,1,Rotary_Encoder_Switch,987-1188-ND,
+12,U1,Teensy30_31_32_LC,1,Teensy3.2,1568-1231-ND,
+13,U2,TSSOP-20_4.4x6.5mm_Pitch0.65mm,1,AD5254,AD5254BRUZ10-RL7CT-ND,
+14,"J7,J3",Grove_1x04,2,Conn_01x04,455-1706-ND,6 inch jumper cable: 455-3151-ND
