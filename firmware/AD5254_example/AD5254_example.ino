@@ -26,10 +26,11 @@ void setup()
   pinMode(buttonPin, INPUT);
   pinMode(ledPin, OUTPUT);
 
-  setAllValues(0x00);
-  myEnc.write(0);
+  mute();
+  unmute();
 }
 unsigned int volume = 0;
+unsigned int muted = 0;
 long oldPosition  = -999;
 int ledState = LOW;         // the current state of the output pin
 int buttonState;             // the current reading from the input pin
@@ -47,26 +48,26 @@ void loop()
 void readRotaryEncoderState() {
   long newPosition = myEnc.read();
   if (newPosition < 0) {
-    //Serial.print("<0 = ");
-    //Serial.println(newPosition);
+    Serial.print("<0 = ");
+    Serial.println(newPosition);
     newPosition = 0;
     myEnc.write(0);
     readAndPrintAllValues();
   }
   if (newPosition > 255) {
-    //Serial.print(">255 = ");
-    //Serial.println(newPosition);
+    Serial.print(">255 = ");
+    Serial.println(newPosition);
     newPosition = 255;
     myEnc.write(255);
+    setAllValues(newPosition);
     readAndPrintAllValues();
   }
   if (newPosition != oldPosition) {
-    unmute();
-    //Serial.print("mid = ");
-    //Serial.println(newPosition);
+    //unmute();
+    Serial.print("mid = ");
+    Serial.println(newPosition);
     oldPosition = newPosition;
-    volume = newPosition;
-    setAllValues(volume);
+    setAllValues(newPosition);
     readAndPrintAllValues();
   }
 }
@@ -112,7 +113,36 @@ void readPushButtonState() {
 void mute() {
   ledState = HIGH;
   digitalWrite(ledPin, ledState);
-  setAllValues(0);
+  //setAllValues(0);
+
+  Wire.beginTransmission(Addr);
+  Wire.write(0x00);
+  Wire.write(0x00);
+  Wire.endTransmission();
+
+  Wire.beginTransmission(Addr);
+  Wire.write(0x01);
+  Wire.write(0x00);
+  Wire.endTransmission();
+
+  Wire.beginTransmission(Addr);
+  Wire.write(0x02);
+  Wire.write(0x00);
+  Wire.endTransmission();
+
+  Wire.beginTransmission(Addr);
+  Wire.write(0x03);
+  Wire.write(0x00);
+  Wire.endTransmission();
+  
+  Wire.beginTransmission(Addr);
+  Wire.write(0x80);
+  Wire.endTransmission();
+
+  volume = 0;
+  muted = 1;
+  
+  myEnc.write(0);
   Serial.println("muted");
   readAndPrintAllValues();
 }
@@ -120,7 +150,9 @@ void mute() {
 void unmute() {
   ledState = LOW;
   digitalWrite(ledPin, ledState);
-  setAllValues(volume);
+  muted = 0;
+  myEnc.write(1);
+  setAllValues(1);
   Serial.println("unmuted");
   readAndPrintAllValues();
 }
@@ -215,13 +247,38 @@ void readAndPrintAllValues() {
   Serial.println(" K");
 }
 
-void setAllValues(int val) {
-    // Start I2C transmission
+void setAllValues(unsigned int val) {
+  if (muted == 1) {
+    return;
+  }
+  uint8_t command = 0x80; // nop
+  if (volume > val) {
+    // decrease volume
+    command = 0xb0;
+  } else if (volume < val) {
+    // increase volume
+    command = 0xd8;
+  }
+  Serial.println(command);
+
+  Wire.beginTransmission(Addr);
+  Wire.write(command);
+  Wire.endTransmission();
+  
+  Wire.beginTransmission(Addr);
+  Wire.write(0x80);
+  Wire.endTransmission();
+
+  volume = val;
+  return;
+
+
+  // Start I2C transmission
   Wire.beginTransmission(Addr);
   // Send instruction for POT channel-0
   Wire.write(0x00);
   // Input resistance value, 0x80(128)
-  Wire.write(val);
+  //Wire.write(val);
   // Stop I2C transmission
   Wire.endTransmission();
 
@@ -251,6 +308,7 @@ void setAllValues(int val) {
   Wire.write(val);
   // Stop I2C transmission
   Wire.endTransmission();
+
 }
 
 

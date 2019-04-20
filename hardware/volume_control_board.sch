@@ -288,9 +288,9 @@ Text GLabel 1200 4700 3    39   Input ~ 0
 SCL
 Text GLabel 1200 4600 1    39   Input ~ 0
 SDA
-Text GLabel 7500 2750 2    39   Input ~ 0
+Text GLabel 7200 2750 2    39   Input ~ 0
 LEFT_IN
-Text GLabel 7500 3550 2    39   Input ~ 0
+Text GLabel 7200 3550 2    39   Input ~ 0
 RIGHT_IN
 $Comp
 L volume_control_board-rescue:C C1
@@ -1291,9 +1291,9 @@ F 3 "" H 7200 2550 50  0001 C CNN
 	1    7200 2550
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7500 3150 2    39   Input ~ 0
+Text GLabel 7200 3150 2    39   Input ~ 0
 RIGHT_IN
-Text GLabel 7500 2350 2    39   Input ~ 0
+Text GLabel 7200 2350 2    39   Input ~ 0
 LEFT_IN
 Wire Wire Line
 	7200 2350 6800 2350
@@ -1392,47 +1392,73 @@ Text Notes 3800 1750 0    50   ~ 0
 Alt 5V supply
 Connection ~ 5250 2450
 $Comp
-L Device:R R14
-U 1 1 5CBA3FFB
-P 7350 2350
-F 0 "R14" V 7250 2350 50  0000 C CNN
-F 1 "10K" V 7350 2350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7280 2350 50  0001 C CNN
-F 3 "~" H 7350 2350 50  0001 C CNN
-	1    7350 2350
+L Connector:TestPoint TP1
+U 1 1 5CB5708F
+P 9550 4850
+F 0 "TP1" V 9504 5038 50  0000 L CNN
+F 1 "TestPoint" V 9595 5038 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 9750 4850 50  0001 C CNN
+F 3 "~" H 9750 4850 50  0001 C CNN
+	1    9550 4850
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R15
-U 1 1 5CBA43B6
-P 7350 2750
-F 0 "R15" V 7250 2750 50  0000 C CNN
-F 1 "10K" V 7350 2750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7280 2750 50  0001 C CNN
-F 3 "~" H 7350 2750 50  0001 C CNN
-	1    7350 2750
+L Connector:TestPoint TP2
+U 1 1 5CB57244
+P 9550 5050
+F 0 "TP2" V 9504 5238 50  0000 L CNN
+F 1 "TestPoint" V 9595 5238 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 9750 5050 50  0001 C CNN
+F 3 "~" H 9750 5050 50  0001 C CNN
+	1    9550 5050
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R16
-U 1 1 5CBA4434
-P 7350 3150
-F 0 "R16" V 7250 3150 50  0000 C CNN
-F 1 "10K" V 7350 3150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7280 3150 50  0001 C CNN
-F 3 "~" H 7350 3150 50  0001 C CNN
-	1    7350 3150
+L Connector:TestPoint TP3
+U 1 1 5CB572D0
+P 9550 5250
+F 0 "TP3" V 9504 5438 50  0000 L CNN
+F 1 "TestPoint" V 9595 5438 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 9750 5250 50  0001 C CNN
+F 3 "~" H 9750 5250 50  0001 C CNN
+	1    9550 5250
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R17
-U 1 1 5CBA44B0
-P 7350 3550
-F 0 "R17" V 7250 3550 50  0000 C CNN
-F 1 "10K" V 7350 3550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 7280 3550 50  0001 C CNN
-F 3 "~" H 7350 3550 50  0001 C CNN
-	1    7350 3550
+L Connector:TestPoint TP4
+U 1 1 5CB57348
+P 9550 5450
+F 0 "TP4" V 9504 5638 50  0000 L CNN
+F 1 "TestPoint" V 9595 5638 50  0000 L CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 9750 5450 50  0001 C CNN
+F 3 "~" H 9750 5450 50  0001 C CNN
+	1    9550 5450
+	0    1    1    0   
+$EndComp
+Text GLabel 9550 4850 0    39   Input ~ 0
+RIGHT_IN
+Text GLabel 9550 5050 0    39   Input ~ 0
+LEFT_IN
+$Comp
+L power:GND #PWR0120
+U 1 1 5CB5773E
+P 9550 5250
+F 0 "#PWR0120" H 9550 5000 50  0001 C CNN
+F 1 "GND" V 9550 5050 50  0000 C CNN
+F 2 "" H 9550 5250 50  0001 C CNN
+F 3 "" H 9550 5250 50  0001 C CNN
+	1    9550 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR0121
+U 1 1 5CB577D9
+P 9550 5450
+F 0 "#PWR0121" H 9550 5200 50  0001 C CNN
+F 1 "GNDA" V 9550 5250 50  0000 C CNN
+F 2 "" H 9550 5450 50  0001 C CNN
+F 3 "" H 9550 5450 50  0001 C CNN
+	1    9550 5450
 	0    1    1    0   
 $EndComp
 $EndSCHEMATC
